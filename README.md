@@ -54,7 +54,7 @@ What has been used:
 
 ## Demo
 
-![Video demo](./assets/demo.mp4)
+![Video demo](./assets/demo.gif)
 
 ------------------------------
 
