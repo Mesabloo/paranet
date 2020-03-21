@@ -52,6 +52,39 @@ What has been used:
  
 ------------------------------
 
+## How to use
+
+First, make sure you have [stack](https://docs.haskellstack.org/en/stable/README/) installed. If not, install it (it may take a little while).
+
+Then, clone this repository:
+```bash
+git clone https://github.com/mesabloo/paranet && cd paranet
+```
+
+Then, you need to build the executables for this project: 
+```bash
+stack build
+# will build everything for you (it is just a bit long)
+```
+
+Next step is to run the server:
+```bash
+stack exec -- server [-p port]
+# default port is 8000
+```
+
+And then run as many clients as you wish:
+```bash
+stack exec -- client [-a address] [-p port]
+# default address is 127.0.0.1
+# default port is also 8000
+```
+
+And here you go!
+Please make sure that you are executing those commands at the root folder! Else it won't work.
+ 
+------------------------------
+
 ## Demo
 
 ![Video demo](./assets/demo.gif)
