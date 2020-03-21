@@ -49,7 +49,13 @@ What has been used:
   and it really isn't easy to use at all.
 - First time in networking too. Fortunately I had nothing to setup thanks to
   [network-run](https://hackage.haskell.org/package/network-run).
-  
+ 
+------------------------------
+
+## Demo
+
+![Video demo](./assets/demo.mp4)
+
 ------------------------------
 
 This work is licensed under the [BSD3 license](./LICENSE). It is free to use by anyone.
