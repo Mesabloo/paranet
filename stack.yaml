@@ -1,0 +1,27 @@
+resolver: lts-15.2
+
+
+packages:
+- .
+
+extra-deps:
+- network-run-0.2.2@sha256:34fcfda2c0e1784913bd51f4ce215f0b7ac33e37b02386132d9260982854fc22,885
+- stm-linkedlist-0.1.0.0@sha256:a1b82dfd8e3652c998b50b2df4a99a27b6decfa463394c1c8b48b5e03bbe3e1e,1765
+
+# Needed for package `qtah-qt5`
+- qtah-qt5-0.6.0@sha256:ca393a9174c702a78fbad2f89d69153360e892219f020fded416a323ede2874f,24811
+- qtah-cpp-qt5-0.6.0@sha256:c0bdd7ad10fb3692fe0d6e94f19b6a7972f819e92433520db1b853c594611ab6,1538
+# - qtah-generator-0.6.0@sha256:c8a6a2e0a1d66451f010182c65eedd64b52a624aceb33844b84a9d41f93c277b,15994
+- hoppy-runtime-0.7.0@sha256:7e8ede0a5c9e18af38181dec8dafe50b2e8ab8309a7391710d2db3327bf4dbc1,1112
+# - hoppy-generator-0.7.0@sha256:238b211170d45e84869f79f0b87571fc8ba331a5a843e22ecc96daa562d2d960,2136
+- hoppy-std-0.7.0@sha256:ed484c2a3ce3ab3af26a09b60b8e23379b997cd892e71804ec9690896eecb7d1,1542
+
+- git: https://github.com/mesabloo/hoppy.git
+  commit: 8d338a5fe27d9fff7b93e937dd8f4dea6de1b4a5
+  subdirs:
+  - generator
+- git: https://github.com/mesabloo/qtah.git
+  commit: 4ad9e06352b5bbec8f717e382c890de560cfaa98
+  subdirs:
+  - qtah-generator
+# ^ This is required as the base packages do not compile with the version of base used here.
